@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music-app</title>
+    <title>Music Playlist</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 <body>
-    
+    <h1>Music Playlist</h1>
+
+    <div id="playlist-form">
+        <h2>Create a Playlist</h2>
+        <input type="text" id="playlist-name" placeholder="Playlist Name">
+        <button id="create-playlist">Create Playlist</button>
+    </div>
+
+    <div id="playlist-container">
+        <h2>Playlists</h2>
+        <ul id="playlist-list"></ul>
+    </div>
+
+    <div id="song-form">
+        <h2>Add Song</h2>
+        <input type="text" id="song-title" placeholder="Song Title">
+        <input type="text" id="song-artist" placeholder="Artist">
+        <input type="text" id="song-genre" placeholder="Genre">
+        <button id="add-song">Add Song</button>
+    </div>
+
+    <script src="scripts/app.js"></script>
 </body>
 </html>
